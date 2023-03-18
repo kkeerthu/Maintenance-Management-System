@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+h1,h2,h3{
+  text-align:center ;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+<center><img src="logo.jpg"  alt="logo" width="200" height="200"></center>
+<h1>UNIVERSITY OF VAVUNIYA</h1>
+<h2>Maintenance Unit</h2>
+<h3>Work Box</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+
+    <label for="worker">Worker :</label>
+    <select id="worker" name="worker">
+	
+	<option value="Carpenter">Carpenter</option>
+	<option value="Mason">Mason</option>
+	<option value="Plumber">Plumber</option>
+	<option value="Electrician">Electrician</option>
+	<option value="Works Aide">Works Aide</option>
+	
+  </select>
+	
+	<label for="work">Name of the Job :</label><br>
+    <textarea id="work" name="work" rows="5" cols="20" ></textarea><br><br>
+	
+	<label for="JobNo">Job No :</label><br>
+    <input type="number" id="jobNo" name="jobNo" placeholder="Job No.."><br><br><br>
+	
+	A request was made by : <input type="text" id="name" name="name" placeholder="Complaint by.."> 
+	From the department / Division of :
+	<input type="text" id="div" name="div" placeholder="Division.."> Inspect it and take necessary action.
+	<br><br><br>
+
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>

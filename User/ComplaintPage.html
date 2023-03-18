@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+h1,h2,h3{
+  text-align:center ;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+<center><img src="logo.jpg"  alt="logo" width="200" height="200"></center>
+<h1>UNIVERSITY OF VAVUNIYA</h1>
+<h2>Maintenance Unit</h2>
+<h3>Complaint Form</h3>
+
+<div class="container">
+  <form action="insert.php">
+
+    <label for="division">Division :</label>
+    <select id="division" name="division">
+	<option value="Registrar">Registrar Office</option>
+	<option value="Exam">Examination & Student Admission</option>
+	<option value="Welfare">Student & Welfare Division</option>
+	<option value="Administration">Administration Branch</option>
+	<option value="Establishment">Establishments Branch</option>
+	<option value="Academic">Academic Affairs & Publication Branch</option>
+	<option value="Maintenance">Maintenance Branch</option>
+	<option value="Audit">Internal Audit</option>
+	<option value="ITCentre">IT Centre</option>
+	<option value="applied science">Faculty of Applied Science</option>
+    <option value="business">Faculty of Business Studies</option>
+    <option value="technology">Faculty of Technology</option>
+  </select>
+  
+	<label for="wlocation">Work Location :</label>
+    <input type="text" id="wlocation" name="worklocation" placeholder="Enter the work place..">
+	
+	<label for="work">Works to be done :</label><br>
+    <textarea id="work" name="work" rows="10" cols="20" ></textarea><br><br>
+	
+	Look forward for your kind assistance in this regard,<br>
+	Thank you.<br><br><br>
+	
+	<h4>Requested By :</h4>
+
+    <label for="title">Title :</label><br>
+    <input type="radio" id="mr" name="title" >
+    <label for="mr">Mr</label>
+    <input type="radio" id="miss" name="title" >
+    <label for="miss">Miss</label>
+    <input type="radio" id="mrs" name="title">
+    <label for="mrs">Mrs</label><br><br>
+
+    <label for="fname">Name :</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+
+
+    <label for="mobile">Contact No :</label><br>
+    <input type="number" id="mobile" name="mobile" placeholder="Your mobile Number.."><br><br><br>
+
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
